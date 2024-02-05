@@ -1,0 +1,20 @@
+.background-dark-green {
+    background-color: #016A70;
+}
+
+.background-pea-green {
+    background-color: #A2C579;
+}
+
+.text-color-light {
+    color: #FFFFDD;
+}
+
+.text-color-dark-green {
+    color: #016A70;
+}
+
+.navbar-custom {
+    --bs-navbar-color: ;
+    color:  #016A70;
+}
