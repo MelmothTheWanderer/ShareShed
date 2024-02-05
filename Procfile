@@ -1,1 +1,1 @@
-web: gunicorn shareshed.wsgi 
+web: gunicorn shareshed.wsgi

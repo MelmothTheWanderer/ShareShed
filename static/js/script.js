@@ -1,0 +1,1 @@
+console.log("The script in the static files is working")
