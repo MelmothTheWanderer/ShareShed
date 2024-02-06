@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% url 'items' as 'items_url'}
+
 
 
 
@@ -11,9 +13,12 @@
      
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3 font-gamja">Help me to clear out my shed!</h1>
-        <p class="lead"> I am donating all of the items in my shed to anybody that wants them! <br> Seriously , you will be doing me a favor!<br> Choose the items that you are interested in , choose a time for collection , and we will make sure that they are waiting for you ! </p>
+        <p class="lead"> I am donating all of the items in my shed to anybody that wants them! <br> Seriously , you will be doing me a favor . Choose the items that you are interested in , choose a time for collection , and we will make sure that they are waiting for you ! </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn bg-light-green btn-lg px-4 me-md-2">Pick something out</button>
+          <a href=" {% url 'items' %}">
+            <button type="button" class="btn bg-light-green btn-lg px-4 me-md-2">Pick something out</button>
+          </a>
+          
         </div>
       </div>
     </div>

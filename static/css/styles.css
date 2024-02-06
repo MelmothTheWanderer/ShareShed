@@ -14,14 +14,29 @@ body {
 
 /* end fonts */ 
 
-
-* {
-    box-sizing: border-box;
-}
-
 .background-dark-green {
     background-color: #016A70;
 }
+
+/* positioning of the footer and the containers in the base template so that the footer stays where it is supposed to */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem
+}
+
+#footer {
+   
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+/*  end of positioning */ 
 
 .background-pea-green {
     background-color: #A2C579;
@@ -31,32 +46,8 @@ body {
     color: #FFFFDD;
 }
 
-body, html {
-    height: 100%;
-}
-
-
-.footer-fixed {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
 
 /* The hero image */
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2019/06/02/20/46/house-4247472_1280.jpg");
-  
-    /* Set a specific height */
-    height: 100%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
 
   .bg-light-green {
     background-color: #D2DE32;
@@ -74,15 +65,3 @@ body, html {
     position: relative;
   }
 
-  #hero-bubble {
-    margin: 20px;
-    border-radius: 5%;
-    background-color: #D2DE32;
-
-  }
-
-  .test-box {
-    background-color: rgba(253, 3, 3, 0.5);
-    height:90vh;
-    border: 5px solid black;
-  }
