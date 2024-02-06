@@ -1,3 +1,20 @@
+/* Fonts for the project */ 
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-gamja {
+  font-family: 'Gamja Flower', sans-serif;
+}
+
+.large-font {
+  font-size:30px;
+}
+
+/* end fonts */ 
+
+
 * {
     box-sizing: border-box;
 }
